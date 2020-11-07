@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My First Website</title>
     <link rel="stylesheet" href="styles/navbar.css" />
-    <link rel="stylesheet" href="styles/home.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
   </head>
   <body>
     <!-- Navbar Section -->
@@ -37,18 +38,17 @@
     </nav>
 
     <!-- Hero Section(Home) -->
-    <div class="home__container" id="home">
-      <h1>
-        <a
-          href=""
-          class="typewrite"
-          data-period="2000"
-          data-type='["Hi, I am Pratik Bapat.","I am a Quick Learner.","I Love to Develope."]'
-        >
-          <span class="wrap"></span>
-        </a>
-      </h1>
+    <div class="hero" id="home">
+      <div class="home__container">
+        <h1 class="elements"></h1>
+      </div>
     </div>
+
+    <!-- About Section -->
+    <div class="main" id="about">
+      <div class="main__container"></div>
+    </div>
+
     <script src="app.js"></script>
   </body>
 </html>
