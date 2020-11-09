@@ -16,8 +16,13 @@ var options = {
     "Hi, I am Pratik Bapat.",
     "I am a Quick Learner.",
     "I Love to Develope.",
+    "I Love myself",
   ],
   backSpeed: 50,
   typeSpeed: 50,
+  loop: true,
+  showCursor: false,
+  smartBackspace: true,
+  // fadeOut: true,
 };
 var typed = new Typed(".elements", options);
