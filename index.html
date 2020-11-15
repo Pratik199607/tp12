@@ -1,55 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My First Website</title>
-    <link rel="stylesheet" href="styles/navbar.css" />
-    <link rel="stylesheet" href="styles/style.css" />
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-  </head>
-  <body>
-    <!-- Navbar Section -->
-    <nav class="navbar">
-      <div class="navbar__container">
-        <a href="#home" id="navbar__logo">Pratik Bapat</a>
-        <div class="navbar__toggle" id="mobile-menu">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-        <ul class="navbar__menu">
-          <li class="navbar__item">
-            <a href="#home" class="navbar__links" id="home-page">Home</a>
-          </li>
-          <li class="navbar__item">
-            <a href="#about" class="navbar__links" id="about-page">About Us</a>
-          </li>
-          <li class="navbar__item">
-            <a href="#contact" class="navbar__links" id="contact-page"
-              >Contact Us</a
-            >
-          </li>
-          <li class="navbar__btn">
-            <a href="#sigup" class="button" id="signup-page">Sign Up</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
 
-    <!-- Hero Section(Home) -->
-    <div class="hero" id="home">
-      <div class="home__container">
-        <h1 class="elements"></h1>
-        <!-- <a class="resume" href="resume/PratikRESUME.pdf">Check Resume</a> -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landing Page Demo</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="app.js" defer></script>
+  <script src="https://kit.fontawesome.com/fa82ffad60.js" crossorigin="anonymous" defer></script>
+</head>
+
+<body>
+
+
+  <!--Navbar Section-->
+  <nav class="navbar">
+    <div class="navbar__container">
+      <a href="#home" id="navbar__logo">COLOR</a>
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__item">
+          <a href="#home" class="navbar__links" id="home-page">Home</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#about" class="navbar__links" id="about-page">About</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#services" class="navbar__links" id="services-page">Services</a>
+        </li>
+        <li class="navbar__btn">
+          <a href="#sign-up" class="button" id="signup">Signup</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- Hero Section -->
+  <div class="hero" id="home">
+    <div class="hero__container">
+      <h1 class="hero__heading">Choose your <span>colors</span></h1>
+      <p class="hero__description">Unlimited Possibilities</p>
+      <button class="main__btn"><a href="#">Explore</a></button>
+    </div>
+  </div>
+
+
+  <!-- About section -->
+  <div class="main" id="about">
+    <div class="main__container">
+      <div class="main__img--container">
+        <div class="main__img--card"><i class="fa fa-layer-group"></i></div>
+      </div>
+      <div class="main__content">
+        <h1>What do we do?</h1>
+        <h2>We help business scale</h2>
+        <p>Schedule a call to learn more about our services</p>
+        <button class="main__btn"><a href="#">Schedule a call</a></button>
       </div>
     </div>
+  </div>
+</body>
 
-    <!-- About Section -->
-    <div class="main" id="about">
-      <div class="main__container"></div>
-    </div>
-
-    <script src="app.js"></script>
-  </body>
 </html>
