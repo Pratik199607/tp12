@@ -5,8 +5,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Landing Page Demo</title>
 		<link rel="stylesheet" href="style.css" />
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 		<script src="app.js" defer></script>
 		<script src="https://kit.fontawesome.com/fa82ffad60.js" crossorigin="anonymous" defer></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	</head>
 
 	<body>
@@ -39,19 +41,25 @@
 		<!-- Hero Section -->
 		<div class="hero" id="home">
 			<div class="hero__container">
-				<h1 class="hero__heading">Choose your <span>colors</span></h1>
-				<p class="hero__description">Unlimited Possibilities</p>
-				<button class="main__btn"><a href="#">Explore</a></button>
+				<h1 class="hero__heading" data-aos="fade-up" data-aos-once="false">
+					Choose your <span>colors</span>
+				</h1>
+				<p class="hero__description" data-aos="fade-up" data-aos-delay="100">
+					Unlimited Possibilities
+				</p>
+				<button class="main__btn" data-aos="fade-up" data-aos-delay="200">
+					<a href="#">Explore</a>
+				</button>
 			</div>
 		</div>
 
 		<!-- About section -->
 		<div class="main" id="about">
 			<div class="main__container">
-				<div class="main__img--container">
+				<div class="main__img--container" data-aos="fade-right" data-aos-delay="200">
 					<div class="main__img--card"><i class="fa fa-layer-group"></i></div>
 				</div>
-				<div class="main__content">
+				<div class="main__content" data-aos="fade-left" data-aos-delay="200">
 					<h1>What do we do?</h1>
 					<h2>We help business scale</h2>
 					<p>Schedule a call to learn more about our services</p>
@@ -62,24 +70,24 @@
 
 		<!-- Services section -->
 		<div class="services" id="services">
-			<h1>Our Services</h1>
+			<h1 data-aos="fade-up">Our Services</h1>
 			<div class="service__wrapper">
-				<div class="service__card">
+				<div class="service__card" data-aos="fade-down-right" data-aos-delay="100">
 					<h2>Custom Colorways</h2>
 					<p>AI powered technology</p>
 					<div class="services__btn"><button>Get Started</button></div>
 				</div>
-				<div class="service__card">
+				<div class="service__card" data-aos="fade-down-right" data-aos-delay="200">
 					<h2>Are you Ready?</h2>
 					<p>Take the leap!</p>
 					<div class="services__btn"><button>Get Started</button></div>
 				</div>
-				<div class="service__card">
+				<div class="service__card" data-aos="fade-down-right" data-aos-delay="300">
 					<h2>Full Gradients</h2>
 					<p>100 combinations</p>
 					<div class="services__btn"><button>Get Started</button></div>
 				</div>
-				<div class="service__card">
+				<div class="service__card" data-aos="fade-down-right" data-aos-delay="400">
 					<h2>Infinite choices</h2>
 					<p>1000's of colors</p>
 					<div class="services__btn"><button>Get Started</button></div>
@@ -90,13 +98,13 @@
 		<!-- Features Section -->
 		<div class="main" id="sign-up">
 			<div class="main__container">
-				<div class="main__content">
+				<div class="main__content" data-aos="fade-right" data-aos-delay="200">
 					<h1>Join our Team</h1>
 					<h2>Signup Today</h2>
 					<p>See what makes us different</p>
 					<button class="main__btn"><a href="/">Signup</a></button>
 				</div>
-				<div class="main__img--container">
+				<div class="main__img--container" data-aos="fade-left" data-aos-delay="200">
 					<div class="main__img--card" id="card-2">
 						<i class="fas fa-users"></i>
 					</div>
@@ -106,7 +114,7 @@
 
 		<!-- Footer Section -->
 		<div class="footer__container">
-			<div class="footer__links">
+			<div class="footer__links" data-aos="fade-up" data-aos-delay="200">
 				<div class="footer__link--wrapper">
 					<div class="footer__link--items">
 						<h2>About Us</h2>
@@ -138,7 +146,7 @@
 					</div>
 				</div>
 			</div>
-			<section class="social__media">
+			<section class="social__media" data-aos="fade-up" data-aos-delay="200">
 				<div class="social__media--wrap">
 					<div class="footer__logo">
 						<a href="#/" id="footer__logo">COLOR</a>
@@ -164,5 +172,12 @@
 				</div>
 			</section>
 		</div>
+
+		<!-- Initialize AOS CSS -->
+		<script type="text/javascript">
+			AOS.init();
+			AOS.refresh();
+			AOS.refreshHard();
+		</script>
 	</body>
 </html>
